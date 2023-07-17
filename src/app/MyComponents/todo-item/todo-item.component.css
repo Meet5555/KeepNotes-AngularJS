@@ -1,0 +1,53 @@
+.todo-item {
+    background-color: #fff;
+    border: 1px solid rgb(2, 179, 2);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 5px 10px;
+  }
+
+  .todo-item__top-right {
+    position: absolute; /* position the date element absolutely */
+    top: 5px; /* position it at the top */
+    right: 5px; /* position it at the right */
+    font-size: 11px; /* make the font smaller */
+    opacity: 0.7; /* reduce the opacity to make it less prominent */
+  }
+
+  .todo-item__title.strike{
+    text-decoration: none;
+  }
+
+  .todo-item__title.strike::after {
+    content: '✓';
+    margin-left: 5px;
+    color: #28a745;
+  }
+
+  .todo-item__symbol{
+    position: absolute; /* position the date element absolutely */
+    top: 3px; /* position it at the top */
+    left: 10px; /* position it at the right */
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .todo-item h5 {
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .todo-item p {
+    margin-bottom: 20px;
+  }
+  
+  .todo-item .form-check-label {
+    font-weight: 400;
+  }
+    
+  .strike {
+    text-decoration: line-through;
+  }

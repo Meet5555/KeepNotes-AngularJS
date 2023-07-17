@@ -1,0 +1,113 @@
+.register-section{
+    min-height: calc(100vh - 120px);
+}
+.register-section {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50vw;
+    border: 1px solid #ccc;
+  }
+  
+  .container h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: poppins;
+    color: #0b8427;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    color: #333;
+    background-color: #f7f7f7;
+    border: none;
+    border-bottom: 1px solid #11c83b;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border: 1px solid #4CAF50;
+    box-shadow: 0 0 5px #4CAF50;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: block;
+    max-width: 20vw;
+    margin: 20px auto 0;
+  }
+  
+  .btn:hover {
+    background-color: #357e3e;
+  }
+  
+  .form-group.passwords {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-group.passwords .form-group{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .form-group.passwords .form-group label{
+    display: inline;
+    width: fit-content;
+  }
+
+  .form-group.passwords .form-group input{
+    flex: 1;
+}
+
+  .form-group.passwords label,
+  .form-group.passwords input {
+    display: inline-block;
+    width: calc(50% - 5px);
+  }
+  
+  .form-group.passwords label {
+    margin-right: 10px;
+  }
+  
+  .form-group.passwords input:last-child {
+    margin-left: 10px;
+  }
+  

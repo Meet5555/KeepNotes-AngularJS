@@ -1,0 +1,20 @@
+<div class="todos-container">
+    <h1 class="text-center mb-3">Welcome to Advance Todo App</h1>
+    <small>now no need to remember anything,just add it here</small>
+    <div class="row container mx-auto main-todos-container">
+      <div class="col-md-8 mx-auto">
+        <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+        <h4 class="your-todo">Your todos</h4>
+        <div *ngIf="todos.length === 0; else elseBlock" class="text-center">No todos to display</div>
+        <ng-template #elseBlock>
+          <div class="row">
+            <div *ngFor="let todo of todos; index as i" class="col-sm-6 col-md-4 mb-4">
+              <app-todo-item [i]="i" [todo]="todo" (todoDelete)="deleteTodo($event)"
+                (todoCheckbox)="toggleTodo($event)"></app-todo-item>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  

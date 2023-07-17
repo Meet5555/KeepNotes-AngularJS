@@ -1,0 +1,45 @@
+
+nav.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000000;
+  }
+  .navbar-sub-brand{
+    color: #11c83b;
+  }
+  .navbar-brand {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #11c83b;
+  }
+  /* Router outlet styling */
+  router-outlet {
+    margin-top: 30px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+  }
+  

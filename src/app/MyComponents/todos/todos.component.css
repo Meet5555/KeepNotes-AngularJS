@@ -1,0 +1,110 @@
+.main-todos-container {
+    background: linear-gradient(to bottom, #c2e59c, #c2e59c);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .main-todos-container h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .main-todos-container > div {
+    margin-top: 20px;
+  }
+  
+  .main-todos-container > div:last-child {
+    margin-top: 0;
+  }
+  
+  .todos-container {
+    padding: 20px;
+  }
+  
+  .todos-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+  }
+  
+  small{
+    display: block;
+    width: fit-content;
+    margin: -8px auto 5px;
+    text-align: center;
+  }
+.todos-container .your-todo {
+    border-radius: 4px;
+    width: 50%;
+    margin: 5px auto 35px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid rgb(0, 128, 0);
+    padding-bottom: 0.5rem;
+    box-shadow: 0 5px 8px rgba(0, 128, 0, 0.4);
+    background-color: #fff;
+  }
+  
+  .todos-container .row {
+    margin-top: 20px;
+  }
+  
+  .todos-container .todo-item {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todos-container .todo-item h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .todos-container .todo-item p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  .todos-container .todo-item .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .todos-container .todo-item .form-check-label {
+    font-size: 16px;
+    color: #666666;
+    margin-left: 5px;
+  }
+  
+  .todos-container .todo-item .btn-danger {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .todos-container .strike {
+    text-decoration: line-through;
+    color: #999999;
+  }
+     
+  @media screen and (max-width: 767px) {
+    .main-todos-container {
+      padding: 10px;
+    }
+  
+    .main-todos-container h4 {
+      font-size: 1.2rem;
+    }
+  }
+  

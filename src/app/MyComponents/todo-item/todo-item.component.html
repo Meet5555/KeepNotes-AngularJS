@@ -1,0 +1,12 @@
+<div class="todo-item">
+  <div class="todo-item__top-right">{{ todo.createdAt | date:'medium' }}</div>
+  <span class="todo-item__symbol">#{{ i + 1 }}</span>
+  <h5 [ngClass]="{'strike': !todo.active}" class="todo-item__title">{{todo.title}}</h5>
+  <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>
+  <div class="form-check mb-3">
+    <input type="checkbox" class="form-check-input" id="todo{{i}}" (click)="onCheckBoxClicked(todo)"
+      [checked]="!todo.active">
+    <label class="form-check-label" for="todo{{i}}">Done</label>
+  </div>
+  <button class="btn btn-danger btn-sm" (click)="onClick(todo)">Delete</button>
+</div>

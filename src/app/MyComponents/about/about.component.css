@@ -1,0 +1,29 @@
+.about-section{
+    width: 70vw !important;
+}
+.about-pic {
+    width: 430px;
+}
+.about-pic img{
+    width: 100%;
+}
+.card-title{
+    margin: 2px auto 15px !important;
+    font-size: 32px;
+    color: #11c83b;
+    font-family: poppins;
+}
+.profile-info p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .profile-info p strong {
+    font-weight: 600;
+  }
+
+  .profile-info p a {
+    color: #007bff;
+    text-decoration: none;
+  }
